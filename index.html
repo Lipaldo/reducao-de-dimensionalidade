@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processador de Imagens</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🧠 Processador de Imagens com JavaScript</h1>
+    <p>Converta imagens para tons de cinza e binárias, e visualize o histograma interativamente.</p>
+  </header>
+
+  <main>
+    <section id="upload-section">
+      <label for="imageUpload" class="upload-label">📤 Escolher Imagem</label>
+      <input type="file" id="imageUpload" accept="image/*">
+    </section>
+
+    <section id="images-container">
+      <div class="image-box">
+        <h3>Imagem Original</h3>
+        <canvas id="originalCanvas"></canvas>
+      </div>
+      <div class="image-box">
+        <h3>Tons de Cinza</h3>
+        <canvas id="grayscaleCanvas"></canvas>
+      </div>
+      <div class="image-box">
+        <h3>Imagem Binária</h3>
+        <canvas id="binaryCanvas"></canvas>
+      </div>
+    </section>
+
+    <section id="controls">
+      <label for="thresholdRange">🔘 Limiar: <span id="thresholdValue">127</span></label>
+      <input type="range" id="thresholdRange" min="0" max="255" value="127">
+    </section>
+
+    <section id="histogram">
+      <h3>📊 Histograma da Imagem em Tons de Cinza</h3>
+      <canvas id="histogramChart"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por <strong>Felipe Maciel</strong> — Projeto de Processamento Digital de Imagens</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
