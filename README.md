@@ -44,4 +44,4 @@ Mostra comparações entre espaço original e reduzido
 
 Apresenta animações/representações visuais dos vetores principais (ou equivalente)
 
-Facilita o entendimento de como a redução funciona na prática, sem depender de código Pytho
+Facilita o entendimento de como a redução funciona na prática, sem depender de código Python
